@@ -24,6 +24,7 @@ import Index from '../../container/index/index.jsx';
 import Today from '../../container/today/today.jsx';
 import Rank from '../../container/rank/rank.jsx';
 import Mine from '../../container/mine/mine.jsx';
+import Detail from "../../container/detail/index";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -35,6 +36,7 @@ ReactDOM.render(
         <Route path='/today' component={Today}/>
         <Route path='/rank' component={Rank}/>
         <Route path='/mine' component={Mine}/>
+        <Route path='/detail/:id' component={Detail}/>
       </Wrap>
     </ConnectedRouter>
   </Provider>
