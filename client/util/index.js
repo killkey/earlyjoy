@@ -17,6 +17,10 @@ let ajax = ({ method='', url='', async=true, data={}, headers={} }) => {
 
     return new Promise((resolve, reject) => {
       xhr.onload = function () {
+        let serverTime=xhr.getResponseHeader("date");
+        //这个格林尼治时间我们需要将它转为北京时间
+        // serverTime=new Date(serverTime);
+        // console.log(serverTime);
         resolve(JSON.parse(xhr.responseText));
       };
       xhr.onerror = function () {
