@@ -25,6 +25,8 @@ import Today from '../../container/today/today.jsx';
 import Rank from '../../container/rank/rank.jsx';
 import Mine from '../../container/mine/mine.jsx';
 import Detail from "../../container/detail/index";
+import MarkToday from "../../container/markToday/MarkToday";
+
 
 ReactDOM.render(
   <Provider store={store}>
@@ -37,6 +39,7 @@ ReactDOM.render(
         <Route path='/rank' component={Rank}/>
         <Route path='/mine' component={Mine}/>
         <Route path='/detail/:id' component={Detail}/>
+        <Route path='/maketoday' component={MarkToday}/>
       </Wrap>
     </ConnectedRouter>
   </Provider>
