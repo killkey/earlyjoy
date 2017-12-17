@@ -5,6 +5,8 @@
 
 这个项目后端使用koa2，前端使用了react。
 
+wox 搜索工具
+
 前端技术栈为
 - 基础列库：react
 - 路由：react-router4
@@ -40,10 +42,10 @@ npm run start
 
 - react-router
 https://reacttraining.cn/
-  
+
 - redux
 http://www.redux.org.cn/
-    
+
 
 
 
