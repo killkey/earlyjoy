@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import actions from '../../redux/actions/index.js';
+
 import {ajax} from "../../util/index";
+
 
 @connect((state) => {
   return {
@@ -26,6 +28,7 @@ export default class extends Component {
       debugger
     })
   }
+
 
   render () {
     let {userName,avatar}=this.state;
